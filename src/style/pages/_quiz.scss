@@ -1,0 +1,77 @@
+.Quiz{
+  .title {
+    text-transform: uppercase;
+    font-size: 60px;
+    font-weight: 400;
+    margin: auto;
+    text-align: center;
+    letter-spacing: 10px;
+    span{
+      color: $red;
+    }
+  }
+  h4{
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-top: 50px;
+    }
+  .container {
+    margin-top: 60px;
+    height: 170px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .single-color{
+      font-family: 'Libre Franklin', sans-serif;
+      cursor: pointer;
+      position:relative;
+      div{
+        height: 170px;
+      }
+    }
+    .red{
+      background: $red;
+      width: 195px;
+    }
+    .purple {
+      background: $purple;
+      width: 195px;
+    }
+    .redorange{
+      background: $brick;
+      width: 110px;
+    }
+    .darkblue {
+      background: $dark-blue;
+      width: 110px;
+    }
+    .orange{
+      background: $orange;
+      width: 75px;
+    }
+    .blue {
+      background: $blue;
+      width: 75px;
+    }
+    .yelloworange{
+      background: $sunset;
+      width: 42px;
+    }
+    .yellow {
+      background: $yellow;
+      width: 42px;
+    }
+    .green {
+      background: $light-green;
+      width: 42px;
+    }
+    .darkgreen{
+      background: $green;
+      width: 42px;
+    }
+    .lightblue{
+      background: $light-blue;
+      width: 42px;
+    }
+  }
+}

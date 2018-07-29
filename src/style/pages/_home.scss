@@ -1,0 +1,106 @@
+.Home{
+  opacity: 0;
+  .title{
+    margin-top: -500px;
+  }
+}
+.Home.visible{
+  position: relative;
+  opacity: 1;
+  transition: 2s;
+  .container {
+    margin-top: 120px;
+    height: 170px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-family: 'Libre Franklin', sans-serif;
+
+    .single-color{
+      cursor: pointer;
+      position:relative;
+      div{
+        height: 170px;
+        text-transform: uppercase;
+        font-weight: 800;
+        font-size: 35px;
+        line-height: 4.5;
+      }
+    }
+    .red{
+      background: $red;
+      width: 195px;
+    }
+    .purple {
+      background: $purple;
+      width: 195px;
+    }
+    .redorange{
+      background: $brick;
+      width: 110px;
+    }
+    .darkblue {
+      background: $dark-blue;
+      width: 110px;
+    }
+    .orange{
+      background: $orange;
+      width: 75px;
+    }
+    .blue {
+      background: $blue;
+      width: 75px;
+    }
+    .yelloworange{
+      background: $sunset;
+      width: 42px;
+    }
+    .yellow {
+      background: $yellow;
+      width: 42px;
+    }
+    .green {
+      background: $light-green;
+      width: 42px;
+    }
+    .darkgreen{
+      background: $green;
+      width: 42px;
+    }
+    .lightblue{
+      background: $light-blue;
+      width: 42px;
+    }
+  }
+  .title.visible{
+    text-transform: uppercase;
+    font-size: 60px;
+    font-weight: 400;
+    margin: auto;
+    text-align: center;
+    letter-spacing: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: animate ease-in 1.5s forwards;
+    @keyframes animate {
+      0% {
+        margin-top: -500px;
+        opacity: 0;
+      }
+      80%{
+        margin-top: 100px;
+        opacity: 1;
+      }
+      90% {
+        margin-top: 80px;
+      }
+      100% {
+        margin-top: 100px;
+      }
+    }
+    span{
+      color: $red;
+    }
+  }
+}

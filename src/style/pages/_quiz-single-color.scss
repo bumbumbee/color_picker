@@ -1,0 +1,35 @@
+.Quiz-current {
+
+  .form {
+    width: 550px;
+    margin: 30px auto;
+    .table {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .block {
+      width: 50px;
+      height: 50px;
+      border: 1px solid white;
+      cursor: pointer;
+    }
+    .active.block{
+      border: 1px solid black !important;
+    }
+
+    .button {
+      margin: 30px auto;
+      width: 520px;
+      height: 40px;
+      font-size: 20px;
+      background: #ffffff;
+      cursor: pointer;
+      font-family: 'Libre Franklin', sans-serif;
+      line-height: 40px;
+    }
+  }
+
+}

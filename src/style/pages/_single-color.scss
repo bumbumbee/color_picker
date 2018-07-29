@@ -1,0 +1,119 @@
+.Colors {
+  .text {
+    opacity: 0;
+  }
+  .title {
+    text-transform: uppercase;
+    font-size: 60px;
+    font-weight: 300;
+    margin: 100px auto;
+    text-align: center;
+    letter-spacing: 10px;
+    span {
+      color: $red;
+    }
+  }
+  .container {
+    margin-top: 120px;
+    height: 170px;
+    display: flex;
+    justify-content: space-between;
+
+    .single-color {
+      font-family: 'Libre Franklin', sans-serif;
+      cursor: pointer;
+      position: relative;
+      div {
+        height: 170px;
+      }
+    }
+    .red {
+      background: $red;
+      width: 195px;
+    }
+    .purple {
+      background: $purple;
+      width: 195px;
+    }
+    .redorange {
+      background: $brick;
+      width: 110px;
+    }
+    .darkblue {
+      background: $dark-blue;
+      width: 110px;
+    }
+    .orange {
+      background: $orange;
+      width: 75px;
+    }
+    .blue {
+      background: $blue;
+      width: 75px;
+    }
+    .yelloworange {
+      background: $sunset;
+      width: 42px;
+    }
+    .yellow {
+      background: $yellow;
+      width: 42px;
+    }
+    .green {
+      background: $light-green;
+      width: 42px;
+    }
+    .darkgreen {
+      background: $green;
+      width: 42px;
+    }
+    .lightblue {
+      background: $light-blue;
+      width: 42px;
+    }
+  }
+
+}
+
+.Colors.visible {
+  transition: opacity 1s ease-in;
+  opacity: 1;
+
+  .title.hide {
+    animation: hideItem ease-out 1.5s forwards;
+    @keyframes hideItem {
+      0% {
+        margin-top: 100px;
+        opacity: 1;
+      }
+      100% {
+        margin-top: -500px;
+        opacity: 0;
+      }
+    }
+  }
+  .active {
+    width: 550px;
+    transition: 1s;
+    .text {
+      width: 540px;
+      margin: auto;
+      padding: 5px;
+      font-weight: 500;
+      font-size: 18px;
+      opacity: 1;
+      color: white;
+    }
+  }
+  .unactive {
+    width: 50px;
+    transition: 1s;
+    .text {
+      opacity: 0;
+    }
+  }
+  div {
+    height: 170px;
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,25 @@
+nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  .home{
+    color: $red;
+    margin-left: 20px;
+  }
+  .quiz{
+    color: $brick;
+    margin-left: 100px;
+  }
+  .login{
+    color:$dark-blue;
+  }
+  .stats{
+    color: $purple;
+    margin-left: 50px;
+
+  }
+}
